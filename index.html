@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="custom.js" defer></script>
+</head>
+<body>
+    <div class="side-image">
+        <div class="logo">
+            <img src="images/odin-lined.png" alt="Odin project logo">
+            <h1>ODIN</h1>
+        </div>
+        <p hidden>Photo by FOX on pexels</p>
+    </div>
+    <div class="main">
+        <div class="heading">
+            <h2>This is not a real online service! You know you need something like this
+                in your life to help you realize your deepest dreams. <br>
+                Sign up <em>now</em> to get started.
+            </h2>
+            <h2>you <em>know</em> you want to.</h2>
+        </div>
+        <form id="account-form" action="">
+            <p>Required elements marked with <span style="color:red">*</span></p>
+
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name">
+            <span></span>
+
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name">
+            <span></span>
+
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" required>
+            <span></span>
+
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone">
+            <span></span>
+
+            <label for="pass">PASSWORD</label>
+            <input type="text" id="pass" name="password" 
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+            <span></span>
+            <div class="pass-require">
+                At least 1 uppercase, lowercase, and number (no special characters)
+            </div>
+
+            <label for="confirm-pass">CONFIRM PASSOWORD</label>
+            <input type="text" id="confirm-pass" name="confirm-pass" required>
+            <span></span>
+        </form>
+        <footer>
+            <button form="account-form" type="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </footer>
+    </div>
+</body>
+</html>
