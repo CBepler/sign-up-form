@@ -26,33 +26,49 @@
         <form id="account-form" action="">
             <p>Required elements marked with <span style="color:red">*</span></p>
 
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name">
-            <span></span>
+            <div class="row1">
+                <div class="firstName">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name">
+                    <span></span>
+                </div>
 
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name">
-            <span></span>
-
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" required>
-            <span></span>
-
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" name="phone">
-            <span></span>
-
-            <label for="pass">PASSWORD</label>
-            <input type="text" id="pass" name="password" 
-            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-            <span></span>
-            <div class="pass-require">
-                At least 1 uppercase, lowercase, and number (no special characters)
+                <div class="lastName">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name">
+                    <span></span>
+                </div>
             </div>
 
-            <label for="confirm-pass">CONFIRM PASSOWORD</label>
-            <input type="text" id="confirm-pass" name="confirm-pass" required>
-            <span></span>
+            <div class="row2">
+                <div class="email">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                    <span></span>
+                </div>
+                <div class="phone">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="row3">
+                <div class="pass">
+                    <label for="pass">PASSWORD</label>
+                    <input type="text" id="pass" name="password"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    <span></span>
+                    <div class="pass-require">
+                        At least 1 uppercase, lowercase, and number (no special characters)
+                    </div>
+                </div>
+                <div class="confirmPass">
+                    <label for="confirm-pass">CONFIRM PASSWORD</label>
+                    <input type="text" id="confirm-pass" name="confirm-pass" required>
+                    <span></span>
+                </div>
+            </div>
         </form>
         <footer>
             <button form="account-form" type="submit">Create Account</button>

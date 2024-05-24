@@ -23,6 +23,7 @@ body{
     justify-content: center;
     background-image: url(images/pexels-fox-58267-1172675.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .logo{
@@ -54,6 +55,10 @@ body{
     background-color: var(--light-grey);
     box-shadow: inset 0px 4px 3px var(--transition-shadow);
     font-weight: 700;
+}
+
+.heading h2{
+    font-size: clamp(1rem, 2.5vh, 15rem);
 }
 
 .heading h2+h2{
@@ -121,4 +126,61 @@ footer{
     background-color: var(--light-grey);
     box-shadow: inset 0px 4px 3px var(--transition-shadow);
     padding: 1rem 2rem;
+}
+
+
+@media (min-width: 800px){
+    body{
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+    }
+    .side-image{
+        height: 100%;
+        width: 30%;
+        background-image: url(images/green-leaf.jpg);
+        background-size: cover;
+    }
+    .logo{
+        height: 25%;
+        background-color: rgba(39, 39, 39, 0.8);
+    }
+    .main{
+        flex:auto;
+    }
+
+    .heading{
+        padding-top: 8vh;
+        padding-bottom: 5vh;
+    }
+
+    footer{
+        padding-bottom: 22vh;
+    }
+
+    .heading, footer, form{
+        padding-left: 4%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row1, .row2, .row3{
+        display: flex;
+        gap: 10%;
+    }
+    
+    .firstName, .email, .pass, .lastName, .phone, .confirmPass{
+        width: 35%;
+    }
+
+    footer{
+        padding-top: 4rem;
+    }
+
+    footer button{
+        padding: 0.8rem 5rem;
+    }
 }
